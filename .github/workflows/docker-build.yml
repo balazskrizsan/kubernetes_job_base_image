@@ -17,7 +17,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}kubernetes_job_base_image:0.1 .
+          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/kubernetes_job_base_image:0.1 .
 
       - name: Push Docker image
         run: |
